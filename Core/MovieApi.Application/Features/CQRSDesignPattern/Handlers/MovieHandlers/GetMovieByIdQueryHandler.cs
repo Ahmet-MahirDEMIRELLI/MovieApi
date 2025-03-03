@@ -1,6 +1,4 @@
-﻿using MovieApi.Application.Features.CQRSDesignPattern.Queries.CategoryQueries;
-using MovieApi.Application.Features.CQRSDesignPattern.Queries.MovieQueries;
-using MovieApi.Application.Features.CQRSDesignPattern.Results.CategoryResults;
+﻿using MovieApi.Application.Features.CQRSDesignPattern.Queries.MovieQueries;
 using MovieApi.Application.Features.CQRSDesignPattern.Results.MovieResults;
 using MovieApi.Persistence.Context;
 using System;
@@ -11,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers
 {
-    public class GetMoviewByIdQueryHandler
+    public class GetMovieByIdQueryHandler
     {
         private readonly MovieContext _context;
 
-        public GetMoviewByIdQueryHandler(MovieContext context)
+        public GetMovieByIdQueryHandler(MovieContext context)
         {
             _context = context;
         }
